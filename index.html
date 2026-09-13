@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مرسيدس بنز - تجربة فاخرة لاختيار سيارتك القادمة">
+  <title>Mercedes-Benz | صممت لتتجاوز التوقعات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Mercedes-Benz">
+      <span class="brand-mark">✦</span>
+      <span class="brand-name">Mercedes-Benz</span>
+    </a>
+    <nav class="main-nav" aria-label="التنقل الرئيسي">
+      <a class="active" href="#home">الرئيسية</a>
+      <a href="#models">الموديلات</a>
+      <a href="#experience">التجربة</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <button class="header-cta" data-open-modal>احجز تجربة قيادة <span>↗</span></button>
+    <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> فئة القيادة الفاخرة</div>
+        <h1>صممت لتتجاوز<br><em>التوقعات.</em></h1>
+        <p class="hero-text">اكتشف توازنًا استثنائيًا بين الأداء، الراحة والتقنية في كل تفصيل. هذه ليست مجرد سيارة، إنها طريقتك الجديدة في الوصول.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#models">اكتشف الموديلات <span>←</span></a>
+          <button class="play-btn" data-scroll-experience><span>▶</span> شاهد التجربة</button>
+        </div>
+        <div class="hero-proof">
+          <div class="avatars"><span>م</span><span>ع</span><span>ر</span><b>+2k</b></div>
+          <div><strong>4.9 / 5</strong><small>تقييم ملاك مرسيدس</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="experience">
+        <div class="visual-label"><span class="status-dot"></span> تجربة تفاعلية <b>360°</b></div>
+        <div class="car-stage" id="carStage">
+          <div class="stage-ring ring-back"></div>
+          <div class="stage-ring ring-front"></div>
+          <div class="car-shadow"></div>
+          <div class="car-card">
+            <img id="heroCarImage" src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=85" alt="Mercedes-Benz C-Class">
+            <div class="car-reflection"></div>
+          </div>
+          <div class="car-badge">★</div>
+          <div class="viewer-angle"><span id="viewerAngle">0°</span><small>360° VIEW</small></div>
+        </div>
+        <div class="rotation-hint">اسحب السيارة يمينًا ويسارًا لاستكشافها <span>↔</span></div>
+      </div>
+    </section>
+
+    <section class="models-section container" id="models">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span></span> اختر أسلوبك</div>
+          <h2>قوة لها <em>شخصية.</em></h2>
+        </div>
+        <a href="#models" class="view-all">عرض كل الموديلات <span>←</span></a>
+      </div>
+      <div class="model-layout">
+        <div class="model-tabs" role="tablist" aria-label="موديلات السيارات">
+          <button class="model-tab active" data-model="c-class" role="tab" aria-selected="true">
+            <span class="tab-icon">◈</span><span><b>C-Class</b><small>سيدان رياضية</small></span><i>←</i>
+          </button>
+          <button class="model-tab" data-model="e-class" role="tab" aria-selected="false">
+            <span class="tab-icon">◇</span><span><b>E-Class</b><small>أناقة متقدمة</small></span><i>←</i>
+          </button>
+          <button class="model-tab" data-model="gle" role="tab" aria-selected="false">
+            <span class="tab-icon">⬡</span><span><b>GLE SUV</b><small>رحابة بلا حدود</small></span><i>←</i>
+          </button>
+          <button class="model-tab" data-model="s-class" role="tab" aria-selected="false">
+            <span class="tab-icon">✧</span><span><b>S-Class</b><small>رفاهية القمة</small></span><i>←</i>
+          </button>
+          <button class="model-tab" data-model="g-class" role="tab" aria-selected="false">
+            <span class="tab-icon">⬢</span><span><b>G-Class</b><small>أيقونة المغامرة</small></span><i>←</i>
+          </button>
+          <button class="model-tab" data-model="eqs" role="tab" aria-selected="false">
+            <span class="tab-icon">⚡</span><span><b>EQS</b><small>مستقبل كهربائي</small></span><i>←</i>
+          </button>
+          <div class="tab-note"><span>✦</span> جميع الأسعار تشمل الضريبة<br>والضمان الممتد</div>
+        </div>
+
+        <article class="spec-card">
+          <div class="spec-topline"><span id="modelCategory">C-CLASS · 2025</span><span class="availability"><i></i> متوفر الآن</span></div>
+          <div class="spec-title-row"><h3 id="modelName">Mercedes-Benz C 200</h3><span class="model-number"><span id="modelIndex">01</span> <b>/ 06</b></span></div>
+          <div class="spec-grid">
+            <div><small>القوة</small><strong id="modelPower">204 <b>حصان</b></strong></div>
+            <div><small>التسارع</small><strong id="modelAcceleration">7.3 <b>ثانية</b></strong></div>
+            <div><small>المحرك</small><strong id="modelEngine">1.5 <b>لتر</b></strong></div>
+            <div><small>السعر يبدأ من</small><strong class="price" id="modelPrice">239,900 <b>ر.س</b></strong></div>
+          </div>
+          <div class="spec-footer"><span>تخصيص <b id="modelColor">Obsidian Black</b></span><button class="configure-btn" data-open-modal>ابدأ التخصيص <span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer container">
+    <div><span class="footer-mark">✦</span><strong>Mercedes-Benz</strong><p>الأفضل أو لا شيء.</p></div>
+    <div class="footer-links"><a href="#home">الرئيسية</a><a href="#models">الموديلات</a><a href="#contact">الفروع</a><a href="#contact">الدعم</a></div>
+    <span class="copyright">© 2025 Mercedes-Benz Experience</span>
+  </footer>
+  <div class="modal" id="driveModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="إغلاق">×</button>
+      <div class="eyebrow"><span></span> تجربة مرسيدس</div>
+      <h2 id="modalTitle">احجز <em>تجربتك.</em></h2>
+      <p>اترك بياناتك وسيتواصل معك مستشارنا خلال يوم عمل.</p>
+      <form id="bookingForm">
+        <label>الاسم الكامل<input type="text" required placeholder="اكتب اسمك"></label>
+        <label>رقم الجوال<input type="tel" required placeholder="05xxxxxxxx"></label>
+        <button class="primary-btn" type="submit">إرسال الطلب <span>←</span></button>
+      </form>
+      <div class="form-success" id="formSuccess">تم استلام طلبك بنجاح. شكرًا لثقتك بنا ✦</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
